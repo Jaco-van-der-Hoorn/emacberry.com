@@ -13,25 +13,25 @@ menu-title: <i class="fa-solid fa-folder fa-fw"></i>&nbsp;PathManager
 
 ## Recreate all Thumbnails
 The thumbnails shown in Pathmanager will be created based on the current active
-[OpenMapDataProvider](./2200-openmapdata.html). If you frequently change the provider or yu have any other reason why you
+[OpenMapDataProvider](./2200-openmapdata.html). If you frequently change the provider or you have any other reason why you
 do not like the current displayed thumbnails, you can start a background process to recreate all thumbnails of your
 present paths.
 
-Please have in mind, that this process will take a while to complete, since this requires that the app needs to load
-each path data (at least latitude/longitude) in order to be able to create the map preview. Please also note that
-depending on the used OMD-Provider
+Please have in mind, that this process will take a while to complete, since as a requirement the app needs to load
+each paths data (at least latitude/longitude) in order to be able to create the map preview. Please also note that it
+depends on the used OMD-Provider
 
 ## Sync Data... {#sync}
-Even if GPSLogger does not use a Database when you record a path, the information which paths you have stored on your
+Even if GPSLogger does not use a Database when you record a path, the information of which paths you have stored on your
 device (previously recorded or imported) is stored in a small database.
 
 The Information displayed in PathManager is based on the database (not on the actual *.gpl files present in your
-filesystem). This is cause of performance reasons (access to a database is much faster, then scanning the
+filesystem). This is because of performance reasons (access to a database is much faster, then scanning the
 filesystem each time).
 
 By default, the app frequently synchronize the database with the filesystem in order to ensure that all your recorded
-and imported path will be displayed in the PathManager. This synchronization is running in the background and this
-implies that the result might be delayed. 
+and imported paths will be displayed in the PathManager. This synchronization is running in the background and this
+means that the result might be delayed. 
 
 When ever you have the feeling that something is missing in PathManager, please make use of the **Sync Data** function,
 in order to force a synchronization of the database with the filesystem.
@@ -69,8 +69,8 @@ in order to force a synchronization of the database with the filesystem.
 ## <i class="fa-solid fa-location-crosshairs fa-fw"></i> Loading reverse Navi(gation) Path {#reversenavipath}
 
 ## <i class="fa-solid fa-share-from-square fa-fw"></i> Load Path into Background
-This is quite a history function, from a time when no navigation was implemented - his will load the path and add it as
-bold, gray line (only visible in the path- & map-view)
+This is quite a historical function, from a time when no navigation was implemented - this will load the path and add it as
+a bold, gray line (only visible in the path- & map-view)
 
 ## <i class="fa-solid fa-share-nodes fa-fw"></i> Share via emacberry.com
 
@@ -81,7 +81,7 @@ only present if your account is connected
 [see the <i class="fa-brands fa-strava fa-fw"></i> Strava Section of this manual](./5200-strava.html)
 
 ## <i class="fa-solid fa-floppy-disk fa-fw"></i> Export
-When selecting the **Export** menu Item a sub-menu will appear that allow you to select one of:
+When selecting the **Export** menu Item a sub-menu will appear that allows you to select one of:
 - KML \[Keyhole Markup Language\]
 - FIT \[Flexible and Interoperable Data Transfer\]
 - GPX (v1.0) \[GPS exchange format\]
@@ -95,7 +95,7 @@ When selecting the **Export** menu Item a sub-menu will appear that allow you to
 [Details about the different file formats can be found in the Export & eMail Section](./5000-export.html#formats)
 
 ## <i class="fa-solid fa-paper-plane fa-fw"></i> Email
-When selecting the **Email** menu Item a sub-menu will appear that allow you to select one of:
+When selecting the **Email** menu Item a sub-menu will appear that allows you to select one of:
 - KML \[Keyhole Markup Language\]
 - FIT \[Flexible and Interoperable Data Transfer\]
 - GPX (v1.0) \[GPS exchange format\]
