@@ -4,7 +4,7 @@ menu-title: <i class="fa-solid fa-mobile-screen-button fa-fw"></i>&nbsp;GUI & Vi
 menu-mobile: User Interface & Views
 ---
 # GUI - Graphical User Interface
-The main application screen consist of:
+The main application screen consists of:
 - The Main View(s)
 - The ActionBar including the main menu
 - The StatusBar (can be disabled)
@@ -19,8 +19,8 @@ Sub Views (I+II). You can:
 <span class="shot">![layout](/assets/img/gpsl/view-layout.png)</span>
 
 - Fully customize which view will be used in each of the three available sections
-- [**Switch** between all the available views](#views) by **swiping left/right** (on a map view you have to start with
-- the swiping near the left/right margin of the map screen)
+- [**Switch** between all the available views](#views) by **swiping left/right** (on a map view you have to start 
+- swiping near the left/right margin of the map screen)
 - Specify the ratio between the main- and the two sub-views (default is 1:1, the screenshot shows 3:1 - the ratio
   between Sub View I & II is always 1:1)
 - Define, if a sub view should be locked (view switching will be disabled)
@@ -29,7 +29,7 @@ Sub Views (I+II). You can:
 All the view configurations can be adjusted in the [Appearance & Startup Settings](./8020-apperance.html#statup),
 so that the application will start with the screen layout you prefer.
 
-Please note that TabBar is not visible when multiple views will be displayed. Then the only remaining option to change
+Please note that TabBar is not visible when multiple views are displayed. Then the only remaining option to change
 the current view is by swiping left/right.
 <br class="shot-end"/>
 
@@ -39,14 +39,14 @@ The ActionBar will be only visible when you are in the view-mode of the applicat
 _ActionBar_ will be hidden, and you can access the  <i class="fa-solid fa-ellipsis-vertical"></i>  main menu via the
 corresponding overlay button.
 
-If enough space on your display the ActionBar will show (beside the
+If there is enough space on your display the ActionBar will show (beside the
  <i class="fa-solid fa-ellipsis-vertical"></i>  menu) the
 <span class="btn">![button-rec](/assets/img/gpsl/button-rec.png)</span> _Start Recording_ Button & the
 <span class="btn">![button-pathman](/assets/img/gpsl/button-pathman.png)</span> [_Open PathManager_](./1500-pathman.html)
 ActionButtons. 
 
-Additionally, the action bar show a Tab(ulator)Bar that allow you to quickly switch between the current active
-main-view. Please note that the TabBar will be only shown if the main view is active only and can also be disabled via
+Additionally, the action bar shows a Tab(ulator)Bar that allows you to quickly switch between the current active
+main-view. Please note that the TabBar will only be shown if only the main view is active and can also be disabled via
 the application settings.
 
 When you make use of the [Multi-Preferences feature](./3950-multipref.html) the ActionBar will show the current active
@@ -54,7 +54,7 @@ profile name instead of _GPSLogger II_.
 
 # The StatusBar
 
-- Can be configured to be rendered as overlay or as own screen part
+- Can be configured to be rendered as an overlay or as its own screen part
 - Fields are fully customizable (including the option to toggle between the use of Emojis or Text)
   <br/>[Appearance & Startup Settings](./8020-apperance.html#statusbar)
 - Showing the recording status as first entry:
@@ -65,7 +65,7 @@ profile name instead of _GPSLogger II_.
 
 <span class="shot">![shot1](/assets/img/gpsl/view-navbar.png)</span>
 The navigation bar is only visible when you have loaded a recorded path (or after you have stopped the recording) Beside
-the slider that allow you to move quickly to any position in the recorded path (timeline) you have the option to use the
+the slider that allows you to move quickly to any position in the recorded path (timeline) you have the option to use the
 media-control-buttons:<br class="shot-end"/>
 
 | Icon | Description |
@@ -81,7 +81,7 @@ Please note, that not all records have to be location records - so moving one re
 select a different record type (see [How GPSLogger will log your data?](./1100-data.html#independant))
 
 # Additional Overlay Buttons
-The app wil show some additional buttons as overlay over the Main View - the appearance of each depends on from the
+The app wil show some additional buttons as overlay over the Main View - the appearance of each depends on the
 current use case and logging state. E.g. the <span class="btn">![button-men](/assets/img/gpsl/button-menu.png)</span>
 will be only shown when the app is recording (and the ActionBar is hidden). 
 
@@ -89,25 +89,25 @@ will be only shown when the app is recording (and the ActionBar is hidden).
 | --- | --- |
 | <span class="btn">![button-men](/assets/img/gpsl/button-menu.png)</span> | Opening the  <i class="fa-solid fa-ellipsis-vertical"></i>  main menu of the application |
 | <span class="btn">![button-rot](/assets/img/gpsl/button-rotation-small.png)</span> | The compass, in the upper left corner of the map, can be used in order to toggle the map orientation: _Always North_ or _Current Heading_ |
-| <span class="btn">![button-pau](/assets/img/gpsl/button-pause.png)</span> | Pause the current recording (when the recording is paused the overlay button will slightly pulse) |
+| <span class="btn">![button-pau](/assets/img/gpsl/button-pause.png)</span> | Pause the current recording (when the recording is paused the overlay button will pulse slightly) |
 | <span class="btn">![button-sto](/assets/img/gpsl/button-stop.png)</span> | Stop the current recording (only visible if device is not in <i class="fa-solid fa-lock"></i> lock state) |
-| <span class="btn">![button-omd](/assets/img/gpsl/button-omd.png)</span> | Iterate between the different configured [OpenMapData Providers](./2200-openmapdata.html) |
-| <span class="btn">![button-pan](/assets/img/gpsl/button-resetpan.png)</span> | Center map on current position (only visible if map view is paned) |
+| <span class="btn">![button-omd](/assets/img/gpsl/button-omd.png)</span> | Alternate between the different configured [OpenMapData Providers](./2200-openmapdata.html) |
+| <span class="btn">![button-pan](/assets/img/gpsl/button-resetpan.png)</span> | Center map on current position (only visible if map view is panned) |
 | <span class="btn">![button-fla](/assets/img/gpsl/button-mflag.png)</span> | Center map on next (navigation) target (only active when a navigation path is loaded) |
-| <span class="btn">![button-zin](/assets/img/gpsl/button-zoomin.png)</span> | Zoom IN (only visible if one of the visible views supporting zoom function) <i class="fa-solid fa-hand-point-up fa-fw"></i> Pinch-to-zoom is also supported |
-| <span class="btn">![button-zou](/assets/img/gpsl/button-zoomout.png)</span> | Zoom OUT (only visible if one of the visible views supporting zoom function) <i class="fa-solid fa-hand-point-up fa-fw"></i> Pinch-to-zoom is also supported |
+| <span class="btn">![button-zin](/assets/img/gpsl/button-zoomin.png)</span> | Zoom IN (only visible if one of the visible views supports zoom function) <i class="fa-solid fa-hand-point-up fa-fw"></i> Pinch-to-zoom is also supported |
+| <span class="btn">![button-zou](/assets/img/gpsl/button-zoomout.png)</span> | Zoom OUT (only visible if one of the visible views supports zoom function) <i class="fa-solid fa-hand-point-up fa-fw"></i> Pinch-to-zoom is also supported |
 | <span class="btn">![button-nav](/assets/img/gpsl/button-resetnav.png)</span> | Reset Off-road Navigation (only available if a navigation path is loaded that does not contain turn-by-turn instructions) |
 | <span class="btn">![button-nxt](/assets/img/gpsl/button-nextwp.png)</span> | [Calculate new next Waypoint](./2500-offroadnav.html#nextwaypoint) (only available if a navigation path is loaded that does not contain turn-by-turn instructions) |
 
 # The available Views {#views}
 
-In the following section some sample screenshots of the different views can show overlay buttons, others does not. The
+In the following section some sample screenshots of the different views can show overlay buttons, others do not. The
 appearance of the overlay buttons can depend on the visibility of a certain view but **don't have too**. In the
-following sections the overlay buttons will not be described - since they might not belong necessarily to the view.
+following sections the overlay buttons will not be described - since they might not necessarily belong to the view.
 
 ## OpenMapData View
 
-GPSLogger have implemented two different Map views - depending on your Android Version and your device you can use the
+GPSLogger has two different Map views implemented - depending on your Android Version and your device you can use the
 vector data based map rendering or an image based map rendering.
 
 ### Vector tile based (using native   OpenGL)
@@ -118,28 +118,28 @@ OpenGL which implies that it is extremely fast. The [VTM library is provided by 
 <span class="shot">![a](/assets/img/gpsl/view-map-vtm.png)</span>
 **Map features & interactions:** 
 - The map image will be generated on the fly using OpenGL
-- The map can be zoomed seamless  
+- The map can be zoomed seamlessly  
 - The map can be rotated (textual information will be aligned based on the rotation)
 - The map can be tilted (touch & hold with two fingers & move fingers up or down)
 - Buildings will be rendered in 3D
-- Supporting also image tiles \[of course with the limits of image based map data (zoom steps, suboptimal text display
+- Also supporting image tiles \[of course with the limits of image based map data (zoom steps, suboptimal text display
   and other things)\]
 
 <br class="shot-end"/>
-**To use the full power of the VTM map should use an open map data provider that will deliver vector tile data. This is
+**To use the full power of the VTM map you should use an open map data provider that will deliver vector tile data. This is
 either the _OSM OpenMapVectorTiles (online)_ provider (mapzen) or the _OpenStreetMap (Offline)_ provider (working with
 local *.map files).** [Details about the different map tiles provider can be found in the OMD Section of this manual.](./2200-openmapdata.html#map-types)
 
-When you use the OpenMapData provider called **OpenStreetMap (Offline)**, then the map will be created on base of so
+When you use the OpenMapData provider called **OpenStreetMap (Offline)**, then the map will be created on the basis of a so
 called _Render Theme_. In such a theme the styling of each part of the map is defined (streets, rivers, bridges,
-tunnels, land usage, etc...). A Render Theme can have own options that would allow you to select different layers or
+tunnels, land usage, etc...). A Render Theme can have its own options that would allow you to select different layers or
 even language preferences that should be visible on your map (see [Render Themes for details](./2300-osmoffline.html#themes)).
 
 <span class="material-icons fa-fw">info</span> The VTM Map is only usable as the _Main View_ of GPSLogger. The Secondary
-View I+II use the second type of the map view.
+View I+II uses the second type of the map view.
 
 > I did not manage to implement 3 different VTM maps on a single screen, running simultaneously without any
-> stability issues. That's the reason why I decided for this workaround (VTM Map only in the Main View).
+> stability issues. That's the reason why I decided on this workaround (VTM Map only in the Main View).
 
 The simplest way to distinguish between the two different map versions is the compass in the upper left corner - if it's
 the complex compass image then it's the VTM map, if it's the simpler _black arrow_, then you are dealing with the image
@@ -147,32 +147,32 @@ tile based map version.
 
 ### Image Tile based
 
-This map view using pixel based images to display a map. The map will be assembled from multiple images - so called
-_tiles_. This tile images can have two different sources:
+This map view uses pixel based images to display a map. The map will be assembled from multiple images - so called
+_tiles_. This tile image can have two different sources:
 
 - Online Image Tile Server
 - Images created from locally stored *.map files (via the [Mapsforge library](https://github.com/mapsforge/mapsforge))
 
-No matter if you use an online tile server or the local created images - once GPSLogger have downloaded or created a
+No matter if you use an online tile server or the local created images - once GPSLogger has downloaded or created a
 tile image it will be locally cached in an internal database, so it can be reused later. This means that you are able to
 use an _online_ OpenMapData Provider even when you are offline, if all the required image tiles of a specific region are
 already stored in your local cache.
 
-<!--The Application support multiple options to _pre-download_ or _pre-generate_ tiles for a certain area.-->
+<!--The Application supports multiple options to _pre-download_ or _pre-generate_ tiles for a certain area.-->
 
 **Supported map interactions:**
-- The map can be zoomed in steps (since each zoom level have the half/double resolution of his predecessor) 
+- The map can be zoomed in steps (since each zoom level has half/double the resolution of its predecessor) 
 - The map can be rotated (but since the image is pixel based the texts will also be rotated as they are)
 - The map can be panned (only if the map is aligned to North - so you can **either** _rotate_ **or** _pan_) 
 
 #### Online Image Tile Server
 
 <span class="shot">![a](/assets/img/gpsl/view-map-def01.png)</span>
-Here on this screenshot you see the OpenStreetMap Carto Style from their none public tile server ([see OSM Tile Usage
+Here on this screenshot you see the OpenStreetMap Carto Style from their non public tile server ([see OSM Tile Usage
 Policy](https://operations.osmfoundation.org/policies/tiles/)).
 
 In general every TileServer that delivers images (in the required projection) can be configured & used with GPSLogger as
-long as the server supporting public http(s) access.
+long as the server supports public http(s) access.
 <br class="shot-end"/>
 
 #### Mapsforge (OSM Offline *.map files)
@@ -180,7 +180,7 @@ long as the server supporting public http(s) access.
 When you use the OpenMapData provider called **OpenStreetMap (Offline)**, then the image tiles will be created with the
 help of a so called _Render Theme_ via the [Mapsforge library](https://github.com/mapsforge/mapsforge) **locally on your
 device**. In the render theme the styling of each part of the map is defined (streets, rivers, bridges, tunnels, land
-usage, etc...). A Render Theme can have own options that would allow you to select different layers or even language
+usage, etc...). A Render Theme can have its own options that would allow you to select different layers or even language
 preferences that should be visible on your map (see [Render Themes for details](./2300-osmoffline.html#themes)).
 
 <span class="shot">![a](/assets/img/gpsl/view-map-def02.png)</span>
@@ -190,8 +190,8 @@ Here in this example screenshot you see the Elevate Render-Theme (created & main
 ## Compass View
 <span class="shot">![a](/assets/img/gpsl/view-compass.png)</span>
 A _very basic_ view - displaying your current direction, where the needle is static (pointing up) and
-the <span style="color:red">**N**</span> is pointing into the direction of the magnetic north. When your device have a
-build in magnetic sensor then the app can behave like a physical compass. 
+the <span style="color:red">**N**</span> is pointing into the direction of the magnetic north. When your device has a
+built in magnetic sensor then the app can behave like a physical compass. 
 
 > My personal experience with the magnetic sensor is, that the overall power consumption is significant higher when the
 > sensor is enabled in the application settings, It can be very useful e.g. when GeoCaching but it really depends on
@@ -204,7 +204,7 @@ Special Thanks to Rob Antonishen for the very nice compass svg file and granting
 
 Speed information based on the GPS signal ~~can be~~ is very flaky. In order to smooth out the noise in the GPS speed
 information GPSLogger applies by default an _average median calculation_ when displaying the speed information. The grey
-graph show you always the result of this internal calculation. \[Taking the set of the last max. 10 speed values, order
+graph always shows you the result of this internal calculation. \[Taking the set of the last max. 10 speed values, order
 them, remove the first and the last (so removing the min. & max.) and then calculate the average value of the remaining
 set.\]. You can disable the speed smoothing via Application Settings > General Settings > GPS-Sensor & Smoothing
 Settings > Smooth Speed <i class="fa-solid fa-toggle-off fa-fw"></i>
@@ -236,19 +236,19 @@ Elevation Data optimizations section](./3250-elevation.html#too).
 <span class="shot">![a](/assets/img/gpsl/view-alt.png)</span>
 - Graph: Showing elevation data over time
 - Graph red: Showing slope/grade over time (min/max -/+33%)
-- Graph blue: **If** present, then showing the original elevation data from the GPS Sensor. This is the case, if in the
+- Graph blue: **If** present, showing the original elevation data from the GPS Sensor. This is the case, if in the
   Barometer Sensor settings _Use as Elevation provider_ <i class="fa-solid fa-toggle-on fa-fw"></i> or if additional
   smoothing will be applied after path loading<br class="shot-end"/>
 
 ## Direction View
 <span class="shot">![a](/assets/img/gpsl/view-dir.png)</span>
 - The compass rose <span style="color:red">**N**</span> is pointing into the direction of the magnetic north.
-- The compass needle is pointing into the direction (as the crow flies) of your target (assuming you hold the device
+- The compass needle is pointing in the direction (as the crow flies) of your target (assuming you hold the device
   right in front of you)
 - Upper left corner: Total distance to destination
 - Upper right corner: Estimated time of arrival at destination (When you are currently moving faster than the
   average speed you will see an arrow pointing down, indicating that the _estimated time of arrival_ might be lower, or
-  an arrow pointing upwards to indicate that the time might be higher when your speed continue to be less than the
+  an arrow pointing upwards to indicate that the time might be higher when your speed continues to be less than the
   overall average speed)
 - Lower left corner top: Course to target waypoint
 - Lower left corner bottom: Relative speed to target waypoint
@@ -258,24 +258,24 @@ Elevation Data optimizations section](./3250-elevation.html#too).
 <br class="shot-end"/>
 
 ## GPS-Data View
-When you want to use GPSLogger as simple GPS display, this is probably the view you would like to use. The view will
+When you want to use GPSLogger as a simple GPS display, this is probably the view you would like to use. The view will
 display the current latitude and longitudes values (depending on your selected format) in the largest possible font so
 that both values are completely displayable on the selected screen size.
 
 <span class="shot">![a](/assets/img/gpsl/view-gps.png)</span>
-- 1'st row (maximum possible font size): Current **Latitude**
-- 2'nd row (maximum possible font size): Current **Longitude**
+- 1st row (maximum possible font size): Current **Latitude**
+- 2nd row (maximum possible font size): Current **Longitude**
 - Lower left corner: Current Speed (without unit)
 - Lower right corner: Current Course
 <br class="shot-end"/>
 
 <span class="shot">![a](/assets/img/gpsl/view-gps-landscape.png)</span>
-You probably want to use this View stand alone e.g. in your cockpit (boat - not aircraft!) in landscape mode to get the
+You probably want to use this View as a stand alone e.g. in your cockpit (boat - not aircraft!) in landscape mode to get the
 maximum font size possible.
 <br class="shot-end"/>
 
 ## Navigation Views
-Before the Multi View I-IV have been available GPSLogger had only the ability to display 3 different views at the same
+Before the Multi View I-IV were available GPSLogger had only the ability to display 3 different views at the same
 time (Main view & SubView I+II). The three available Navigation views have been implemented in order to allow the user
 to configure the screen depending on his personal use case. All the available information is also available as part of
 the MultiViews. [See <i class="fa-solid fa-window-restore"></i> Multi View I - Multi View IV Section for details.](./3150-multiviews.html)
@@ -286,7 +286,7 @@ you while moving (actively looking onto the device display).
 
 <span class="shot">![a](/assets/img/gpsl/view-nav-dir.png)</span>
 - Arrow: pointing in the direction (as the crow flies) of the next navigation target (can be a TurnByTurn position or 
-  a Off-road navigation waypoint)
+  an Off-road navigation waypoint)
 - Medium Font middle: Distance to the waypoint
 - Medium Font bottom: Remaining overall distance after the waypoint
 <br class="shot-end"/>
@@ -343,7 +343,7 @@ Data for the Power View is only available if you have paired an BluetoothLE Powe
 - Large Font top: Current cycling power
 - Medium Font middle: Current ratio between left & right leg (balance - here in the example left leg provided 51%,
   while right delivered _just_ 49% of the 263 watts)
-- Medium Font bottom: the average balance between left & right (here in the example the right leg provided in average
+- Medium Font bottom: the average balance between left & right (here in the example the right leg provided on average
   6.07% more power than the left)
 - Graph: Showing cycling power over time
 - Graph red: Showing the average power
@@ -352,11 +352,11 @@ Data for the Power View is only available if you have paired an BluetoothLE Powe
 <br class="shot-end"/>
 
 ## Barometer View
-Data for the Barometer View is only available if your device have build in a barometer sensor and if you have enabled
+Data for the Barometer View is only available if your device have a built in barometer sensor and if you have enabled
 the Barometer Sensor in the Application settings.
 
 <span class="shot">![a](/assets/img/gpsl/view-baro.png)</span>
-- Large Font: Showing current pressure in millibar
+- Large Font: Showing current pressure in millibars
 - Graph: Showing pressure over time
 
 Here in the sample screenshot you also see how a pause in the recording data will be rendered in the different time axis
@@ -364,7 +364,7 @@ based views. In this example the pause took 1 minute and 30 seconds.
 <br class="shot-end"/>
 
 ## TargetSpeed View
-Implemented for a specific use case of a friend - mainly give you a target speed based on the current slope. 
+Implemented for a specific use case of a friend - mainly to give you a target speed based on the current slope. 
 
 ## Climb View
 The Details about the [Climb are described in a separate section of this manual](./3300-climb.html#view)
@@ -379,7 +379,7 @@ The Details about the [Multi View I - Multi View IV are described in a separate 
 <br class="shot-end"/>
 
 ## BTLE-Beacon View
-Data for the BTLE-Beacon View is only available if you have enabled the build in BluetoothLowEnergy beacon scanner **and**
+Data for the BTLE-Beacon View is only available if you have enabled the built in BluetoothLowEnergy beacon scanner **and**
 you have started the recording process. [Please see <i class="fa-brands fa-bluetooth"></i> Build in BluetoothLowEnergy
 Beacon Scanner for details.](4000-btlescanner.html)
 
@@ -390,27 +390,27 @@ Beacon Scanner for details.](4000-btlescanner.html)
 
 ## Path View
 
-The _Path View_ is the initial created view of GPSLogger - so everything have started from there. At the first days of
-the application there was almost none map support on the BlackBerry Platform available. So the initial approach of
+The _Path View_ is the initial created view of GPSLogger - so everything has started from here. In the first days of
+the application there was almost no map support on the BlackBerry Platform available. So the initial approach of
 GPSLogger was to show the user a x-y-axis graph of his path. This might also explain, why the activities/tracks/routes
 that you record with the app have the internal name _path_.)
 
 <span class="shot">![a](/assets/img/gpsl/view-path.png)</span> The Path view is drawing the latitude/longitude positions
-on a simple X/Y axis **without any projection**. This means, that each pixel on the display have a different length or
+on a simple X/Y axis **without any projection**. This means, that each pixel on the display has a different length or
 height in the real world.
 
-This seams to be ridiculous bad from today's point of view - but hey _I was young and needed the money!_ What else can I
-say as lame excuse. Seriously this view is just included in GPSLogger for nostalgic reasons. I don't expect that any
-current user have this view enabled.
+This seems to be ridiculously bad from today's point of view - but hey _I was young and needed the money!_ What else can I
+say, a lame excuse. Seriously this view is just included in GPSLogger for nostalgic reasons. I don't expect that any
+current user has this view enabled.
 
 The Path View does not allow much user interaction - zoom in & zoom out, that's it basiaclly - even a pan option is not
 available in this initial view.
 <br class="shot-end"/>
 
 <span class="shot">![a](/assets/img/gpsl/view-path-compare.png)</span>If you want to have an accurate view of your
-path (map projection wise), please use the OpenMapData View with **OpenStreetMap (Offline)** provider - when you do not
+path (map projection wise), please use the OpenMapData View with the **OpenStreetMap (Offline)** provider - when you do not
 have any additional *map files in your offline maps directory (only the world.map present), then the presentation of the
 OpenMapData View is the view you should use. It's also 100% offline.
 
-When you compare both screenshots here the difference is quite noticeable! (Even if you ignore all the other difference
+When you compare both screenshots here the difference is quite noticeable! (Even if you ignore all the other differences
 like: compass, map attribution or the different styling of path & background-path rendering.)<br class="shot-end"/>
